@@ -1,0 +1,145 @@
+.bodyfondo {
+    background-image: url(../images/FondoAzulMain.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header {
+    background-color: #C4C4C4;
+    height: 7rem;
+
+}
+
+.logo-ibp {
+    width: 5rem;
+}
+
+.main-content {
+    position: relative;
+}
+
+.login-content {
+    display: flex;
+    gap: .8rem;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+
+img.bg-image {
+    width: 100%;
+    position: relative;
+    height: calc(100vh - 13rem);
+    object-fit: cover;
+}
+
+div#carouselExampleInterval {
+    display: none;
+}
+
+.carousel-image {
+    border-radius: .5rem;
+    height: 28rem;
+    object-fit: cover;
+}
+
+
+
+form {
+
+    background-color: white;
+    padding: 2rem;
+    margin: 0 auto;
+    border: 2px black solid;
+    border-radius: .5rem;
+}
+
+button.btn.btn-primary {
+    margin: .5rem 0;
+}
+
+
+.footer {
+
+    background-color: #91A4B8;
+    height: 6rem;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .link-text {
+    padding-left: 0.5rem;
+}
+
+.footer .bi {
+    font-size: 1rem;
+}
+
+@media (min-width:768px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    div#carouselExampleInterval {
+        display: block;
+        flex-basis: 65%;
+
+
+    }
+
+    .carousel-image {
+        height: 20rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    form {
+        flex-basis: 35%;
+        padding: 1rem 1.4rem;
+
+    }
+
+}
+
+@media (min-width: 992px) {
+    form {
+
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    img.bg-image {
+        height: inherit;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    .carousel-image {
+        height: 28rem;
+    }
+
+    form {
+
+        height: 28rem;
+    }
+
+}
