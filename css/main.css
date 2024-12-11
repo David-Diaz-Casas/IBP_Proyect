@@ -3,7 +3,9 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-
+/* .html{
+    box-sizing: 1.6rem;
+} */
 .header {
     background-color: #C4C4C4;
     height: 7rem;
@@ -14,8 +16,18 @@
     width: 5rem;
 }
 
+.main {
+    height: calc(100vh - 13rem);
+    position: relative;
+    box-sizing: border-box;
+    /* height: 20rem; */
+    height: calc(100vh - 13rem);
+}
+
 .main-content {
     position: relative;
+    box-sizing: 1.6rem;
+
 }
 
 .login-content {

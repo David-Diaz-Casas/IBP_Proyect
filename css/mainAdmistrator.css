@@ -1,0 +1,118 @@
+header {
+
+    background-color: #7aa3cc;
+    border: 1.5px solid black;
+    padding: 10px;
+    margin: 5px;
+    height: 100px;
+}
+
+.cabecera {
+    border: 2px dotted green;
+    text-align: center;
+}
+
+main {
+
+    background-color: #d4dee7;
+    border: 1.5px solid black;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    height: 650px;
+}
+
+main .mainclass {
+    border: 2px dotted green;
+    padding: 5px;
+
+}
+
+.main-content {
+    border: 2px solid red;
+}
+
+.card-Image {
+    border: 2px dotted yellow;
+}
+
+.card-Button {
+    border: 2px dotted green;
+}
+
+footer {
+
+    background-color: #e5ebe7;
+    border: 1.5px solid black;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+footer div {
+    border: 2px dotted green;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+
+
+}
+
+
+/** 567px --> 767px */
+@media (min-width: 567px) {
+    .container {
+        max-width: 4rem;
+        padding: 0 1.6rem;
+    }
+}
+
+/** 768px --> 1023px */
+@media (min-width: 768px) {
+    .container {
+        max-width: 72rem;
+        padding: 0 2.4rem;
+    }
+
+}
+
+/** 1024px --> 1999px */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 99.2rem;
+        padding: 0 3.2rem;
+    }
+}
+
+/** 1600px --> 1919px */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 144rem;
+        padding: 0 5.6rem;
+    }
+}
+
+/** 1920px --> 2159px */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 160rem;
+        padding: 0 6.4rem;
+    }
+}
+
+/** 2160px --> 2459px */
+@media (min-width: 2160px) {
+    .container {
+        max-width: 176rem;
+        padding: 0 7.2rem;
+    }
+}
+
+/** 2160px --> more */
+@media (min-width: 2560px) {
+    .container {
+        max-width: 192rem;
+        padding: 0 8rem;
+    }
+}
