@@ -1,42 +1,48 @@
-:root{
+:root {
     --header-height: 3rem;
     --footer-height: 3rem;
 }
 
-html{
+html {
     box-sizing: border-box;
 }
 
-.header{
+.header {
     height: var(--header-height);
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     box-sizing: border-box;
+    background-color: #C4C4C4;
+
+    .logo {
+        width: 3rem;
+    }
 }
+
 .header-container {
     border: 2px dotted green;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.main{
+
+.main {
     height: calc(100vh - (var(--header-height) + var(--footer-height)));
     background-image: url("../images/FondoAzulMain.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.container-main {
-    
-    
-}
 
-.footer{
+
+.footer {
     height: var(--footer-height);
-    
+    background-color: #91A4B8;
+    color: white;
+
 }
 
 
-.container-footer{
-    border: 2px solid blue;
+.container-footer {
+    /* border: 2px solid blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,6 +67,7 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
+
 /** 567px --> 767px */
 @media (min-width: 567px) {
     .container {
