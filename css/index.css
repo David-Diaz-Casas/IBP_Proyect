@@ -1,6 +1,7 @@
 :root {
-    --header-height: 3rem;
-    --footer-height: 3rem;
+    /*Se crean variables para fijar una medida en la parte de arriba y abajo de la pagina*/
+    --header-height: 4rem;
+    --footer-height: 5rem;
 }
 
 html {
@@ -14,16 +15,27 @@ html {
     background-color: #C4C4C4;
 
     .logo {
-        width: 3rem;
+        width: 4rem;
+        padding: 2rem;
     }
 }
 
-.header-container {
-    border: 2px dotted green;
+
+.container-header,
+.container-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: var(--header-height);
+
 }
+.container-header {
+    flex-direction: row;
+}
+.container-footer {
+    flex-direction: column;
+}
+
 
 .main {
     height: calc(100vh - (var(--header-height) + var(--footer-height)));
@@ -32,6 +44,27 @@ html {
     background-size: cover;
 }
 
+.container-main-forms {
+    display: flex
+;
+    gap: .8rem;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    top: 23%;
+    left: 11%;
+}
+
+img {
+    border-style: none;
+    width: 4rem;
+    padding: 2rem;
+}
+
+.form-login h2{
+    margin: 0;
+    padding: 1rem;
+}
 
 .footer {
     height: var(--footer-height);
@@ -39,17 +72,6 @@ html {
     color: white;
 
 }
-
-
-.container-footer {
-    /* border: 2px solid blue; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-
 
 /*-----------------------------------------------------*/
 .container {
@@ -71,9 +93,12 @@ html {
 /** 567px --> 767px */
 @media (min-width: 567px) {
     .container {
-        max-width: 4rem;
+        max-width: 40rem;
         padding: 0 1.6rem;
     }
+
+
+
 }
 
 /** 768px --> 1023px */
@@ -83,6 +108,9 @@ html {
         padding: 0 2.4rem;
     }
 
+    .container-footer {
+        flex-direction: row;
+    }
 }
 
 /** 1024px --> 1999px */
