@@ -29,9 +29,11 @@ html {
     height: var(--header-height);
 
 }
+
 .container-header {
     flex-direction: row;
 }
+
 .container-footer {
     flex-direction: column;
 }
@@ -42,28 +44,66 @@ html {
     background-image: url("../images/FondoAzulMain.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-main-forms {
-    display: flex
-;
+    display: flex;
     gap: .8rem;
-    position: absolute;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    top: 23%;
-    left: 11%;
+    flex-direction: column;
+    height: 18rem;
+
 }
 
 img {
     border-style: none;
-    width: 4rem;
-    padding: 2rem;
+    width: 15rem;
+    padding: 1rem 1.4rem;
 }
 
-.form-login h2{
-    margin: 0;
-    padding: 1rem;
+.form-login {
+
+    .titulo {
+        text-align: center;
+    }
+
+}
+
+.form-hijo {
+    border-radius: .5rem;
+    border-radius: .5rem;
+    height: 18rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .titulo {
+        margin: 0;
+    }
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    width: 90%;
+    margin: 0 aut
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field input,
+.field label {
+    width: 96%;
 }
 
 .footer {
@@ -111,6 +151,27 @@ img {
     .container-footer {
         flex-direction: row;
     }
+
+    .container-main-forms {
+
+        flex-direction: row;
+
+    }
+
+    .banner-image {
+        flex: 1 0 50%;
+    }
+
+    .form-login {}
+
+    label {
+        /* padding-left: 2rem; */
+    }
+
+    input {
+        /* padding-left: 2rem; */
+    }
+
 }
 
 /** 1024px --> 1999px */
@@ -118,6 +179,7 @@ img {
     .container {
         max-width: 99.2rem;
         padding: 0 3.2rem;
+
     }
 }
 
