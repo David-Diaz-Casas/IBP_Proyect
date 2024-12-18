@@ -78,12 +78,20 @@ body {}
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: .5rem;
 
     .titulo {
         text-align: center;
         margin: 0 0 2rem 0;
     }
 
+    .form-content {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 
     .field input {
         padding: .5rem;
@@ -92,24 +100,16 @@ body {}
     .field input,
     .field label {
         min-width: 94%;
+        border-radius: .5rem;
 
     }
-
-    /* .form-hijo {
-
-        height: 22rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 9px 0.5rem;
-    } */
-    .form-content {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
+}
+.field-button {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 100%;
 }
 
 .footer {
@@ -159,6 +159,7 @@ body {}
         border-style: none;
         width: 100%;
         display: block;
+        border-radius: .5rem;
     }
 
     .container-footer {
@@ -166,6 +167,7 @@ body {}
         flex-direction: row;
         justify-content: space-between;
     }
+
 }
 
 /** 768px --> 1023px */
@@ -179,6 +181,10 @@ body {}
         display: block;
         height: 100%;
     }
+    .field-button {
+        width: 50%;
+    }
+
 }
 
 /** 1024px --> 1999px */
@@ -187,6 +193,9 @@ body {}
         max-width: 99.2rem;
         padding: 0 6.2rem;
     }
+
+
+
 }
 
 /** 1600px --> 1919px */
@@ -194,6 +203,10 @@ body {}
     .container {
         max-width: 100rem;
         padding: 0 5.6rem;
+    }
+
+    .field button {
+        width: 50%;
     }
 }
 
