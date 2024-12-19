@@ -2,6 +2,7 @@
     /*Se crean variables para fijar una medida en la parte de arriba y abajo de la pagina*/
     --header-height: 4rem;
     --footer-height: 5rem;
+
 }
 
 html {
@@ -16,7 +17,7 @@ body {}
     background-color: #C4C4C4;
 
     .logo {
-        border: 1px solid blue;
+        
         width: 4rem;
         height: 4rem;
         object-fit: contain;

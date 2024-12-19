@@ -1,7 +1,7 @@
 :root {
     /*Se crean variables para fijar una medida en la parte de arriba y abajo de la pagina*/
-    --header-height: 4rem;
-    --footer-height: 5rem;
+    --header-height: 5rem;
+    --footer-height: 4rem;
 }
 
 html {
@@ -14,16 +14,22 @@ body {}
     height: var(--header-height);
     box-sizing: border-box;
     background-color: #C4C4C4;
+    background-image: url("../images/FondoHeader.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
 
     .logo {
-        
-        width: 4rem;
-        height: 4rem;
+
+        width: 5.4rem;
+        height: 5.4rem;
         object-fit: contain;
         box-sizing: border-box;
     }
 
     .container-header {
+        height: var(--header-height);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -58,7 +64,29 @@ body {}
     width: 84%;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
+
+}
+
+.container-cards {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    border: 3px solid blue;
+    flex-wrap: wrap;
+}
+
+.card-content {
+    border: 3px solid green;
+    width: 100%;
+}
+
+.section-img {
+    width: 100%;
 }
 
 .container-forms-cards {
@@ -70,19 +98,24 @@ body {}
     gap: 1rem;
     margin: .5rem;
     flex-wrap: wrap;
-  
 
     .content-card {
+        min-width: 229px;
+        width: 100dvw;
+    }
 
+    .card-image {
+        border-radius: 1rem 1rem 0rem 0rem;
         box-shadow: 0px 0px 30px #000;
-        
-    
+        /* height: 227px; */
     }
 
     img {
         display: block;
         width: 100%;
         border-radius: 1rem 1rem 0rem 0rem;
+        object-fit: contain;
+        box-sizing: border-box;
     }
 
     h2 {
@@ -120,6 +153,7 @@ body {}
     margin: 0 auto;
     padding: 0 .8rem;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .container-fluid {
@@ -136,6 +170,12 @@ body {}
         max-width: 36rem;
     }
 
+    .container-cards {
+        flex-direction: row;
+    }
+    .card-content {
+        flex: 1 0 45%;
+    }    
 
     .container-footer {
         color: white;
@@ -147,21 +187,14 @@ body {}
 
 /** 768px --> 1023px */
 @media (min-width: 768px) {
-    .main {}
 
     .container {
         max-width: 72rem;
         padding: 0 2.4rem;
     }
-
-    .container-forms-cards {
-
-        flex-direction: row;
-        /* height: 100%; */
-        align-items: center;
+    .card-content {
+        flex: 0 0 31%;
     }
-
-
 }
 
 /** 1024px --> 1999px */
@@ -169,6 +202,14 @@ body {}
     .container {
         max-width: 99.2rem;
         padding: 0 6.2rem;
+    }
+    .card-content {
+        flex: 1 0 23%;
+    }
+    .container-forms-cards {
+        .content-card {
+            flex: 1 1 23%;
+        }
     }
 }
 
