@@ -10,6 +10,7 @@ html {
 
 body {}
 
+/*------------------------ SECCIÓN DEL HEADER -----------------------*/
 .header {
     height: var(--header-height);
     box-sizing: border-box;
@@ -47,6 +48,7 @@ body {}
     /* background-color: red; 
 }*/
 
+/*------------------------ SECCIÓN DEL MAIN -----------------------*/
 .main {
     background-color: orange;
     background-image: url("../images/FondoAzulMain.jpg");
@@ -60,13 +62,19 @@ body {}
 }
 
 .container-menu {
+
     color: white;
-    width: 84%;
     display: flex;
     justify-content: space-between;
     width: 100%;
 
-
+    .submenu,
+    h2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+    }
 }
 
 .container-cards {
@@ -75,39 +83,21 @@ body {}
     align-items: flex-start;
     gap: 1rem;
     flex-direction: column;
-    width: 100%;
-    border: 3px solid blue;
+    /* width: 100%; */
+    flex: 0 0 227px;
     flex-wrap: wrap;
-}
+    margin: 1rem 0 2rem 0;
 
-.card-content {
-    border: 3px solid green;
-    width: 100%;
-}
-
-.section-img {
-    width: 100%;
-}
-
-.container-forms-cards {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    /* align-items: center; */
-    height: 100%;
-    gap: 1rem;
-    margin: .5rem;
-    flex-wrap: wrap;
-
-    .content-card {
-        min-width: 229px;
-        width: 100dvw;
+    .card-content {
+        border-radius: 1rem 1rem 0rem 0rem;
+        box-shadow: 0px 0px 20px #000;
+        /* height: 227px; */
+        width: 100%;
+        
     }
 
-    .card-image {
-        border-radius: 1rem 1rem 0rem 0rem;
-        box-shadow: 0px 0px 30px #000;
-        /* height: 227px; */
+    .section-img {
+        width: 100%;
     }
 
     img {
@@ -118,20 +108,23 @@ body {}
         box-sizing: border-box;
     }
 
-    h2 {
+    .card-name {
         background-color: orange;
         color: white;
         text-align: center;
         padding: 12px;
         border-radius: 0 0 .5rem .5rem;
         margin: auto;
-
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: x-large;
     }
+
 
 }
 
 
-
+/*------------------------ SECCIÓN DEL FOOTER -----------------------*/
 .footer {
     background-color: #91A4B8;
 }
@@ -164,6 +157,7 @@ body {}
     box-sizing: border-box;
 }
 
+/*------------------------ SECCIÓN MEDIA QUERY´S -----------------------*/
 /** 567px --> 767px */
 @media (min-width: 567px) {
     .container {
@@ -173,9 +167,10 @@ body {}
     .container-cards {
         flex-direction: row;
     }
+
     .card-content {
         flex: 1 0 45%;
-    }    
+    }
 
     .container-footer {
         color: white;
@@ -193,6 +188,9 @@ body {}
         padding: 0 2.4rem;
     }
     .card-content {
+        flex: 1 0 31%;
+    }
+    .card-content:last-child {
         flex: 0 0 31%;
     }
 }
@@ -203,13 +201,12 @@ body {}
         max-width: 99.2rem;
         padding: 0 6.2rem;
     }
+
     .card-content {
-        flex: 1 0 23%;
+        flex: 1 0 21%;
     }
-    .container-forms-cards {
-        .content-card {
-            flex: 1 1 23%;
-        }
+    .card-content:last-child {
+        flex: 1 0 21%;
     }
 }
 
