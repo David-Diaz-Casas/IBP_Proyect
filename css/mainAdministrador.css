@@ -89,6 +89,7 @@ body {}
     flex: 0 0 227px;
     width: 100%;
     flex-wrap: wrap;
+    margin: 1rem 0 2rem 0;
 
     .link-text-cards{
         text-decoration: none;
