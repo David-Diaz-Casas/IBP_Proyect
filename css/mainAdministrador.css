@@ -63,23 +63,18 @@ body {}
 
 .container-menu {
 
-    
+    color: white;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    
 
-    .submenu, .link-text-menu ,
+    .submenu,
     h2 {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: .5rem;
-        text-decoration: none;
-        color: white;
-        
     }
-    
 }
 
 .container-cards {
@@ -90,12 +85,8 @@ body {}
     flex-direction: column;
     /* width: 100%; */
     flex: 0 0 227px;
+    width: 100%;
     flex-wrap: wrap;
-    margin: 1rem 0 2rem 0;
-
-    .link-text-cards{
-        text-decoration: none;
-    }
 
     .card-content {
         border-radius: 1rem 1rem 0rem 0rem;
@@ -109,13 +100,13 @@ body {}
         width: 100%;
     }
 
-    img {
-        display: block;
-        width: 100%;
-        border-radius: 1rem 1rem 0rem 0rem;
-        object-fit: contain;
-        box-sizing: border-box;
-    }
+img {
+    display: block;
+    width: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+    object-fit: contain;
+    box-sizing: border-box;
+}
 
     .card-name {
         background-color: orange;
@@ -196,10 +187,10 @@ body {}
         max-width: 72rem;
         padding: 0 2.4rem;
     }
+
+
+
     .card-content {
-        flex: 1 0 31%;
-    }
-    .card-content:last-child {
         flex: 0 0 31%;
     }
 }
@@ -214,43 +205,46 @@ body {}
     .card-content {
         flex: 1 0 21%;
     }
-    .card-content:last-child {
-        flex: 1 0 21%;
+
+    .container-forms-cards {
+        .content-card {
+            flex: 1 1 23%;
+        }
     }
 }
 
-/** 1600px --> 1919px */
-@media (min-width: 1600px) {
-    .container {
-        max-width: 100rem;
-        padding: 0 5.6rem;
+    /** 1600px --> 1919px */
+    @media (min-width: 1600px) {
+        .container {
+            max-width: 100rem;
+            padding: 0 5.6rem;
+        }
+
+        .field button {
+            width: 50%;
+        }
     }
 
-    .field button {
-        width: 50%;
+    /** 1920px --> 2159px */
+    @media (min-width: 1920px) {
+        .container {
+            max-width: 160rem;
+            padding: 0 6.4rem;
+        }
     }
-}
 
-/** 1920px --> 2159px */
-@media (min-width: 1920px) {
-    .container {
-        max-width: 160rem;
-        padding: 0 6.4rem;
+    /** 2160px --> 2459px */
+    @media (min-width: 2160px) {
+        .container {
+            max-width: 176rem;
+            padding: 0 7.2rem;
+        }
     }
-}
 
-/** 2160px --> 2459px */
-@media (min-width: 2160px) {
-    .container {
-        max-width: 176rem;
-        padding: 0 7.2rem;
+    /** 2160px --> more */
+    @media (min-width: 2560px) {
+        .container {
+            max-width: 192rem;
+            padding: 0 8rem;
+        }
     }
-}
-
-/** 2160px --> more */
-@media (min-width: 2560px) {
-    .container {
-        max-width: 192rem;
-        padding: 0 8rem;
-    }
-}
